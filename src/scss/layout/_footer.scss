@@ -1,8 +1,41 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer {
+    background-color: #304268;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.wrapper-footer__1 {
+    margin: 60px 124px 0 124px;
+}
+.wrapper-footer__2 {
+    margin: 30px 86px 30px 86px;
+}
+.link {
+    color: $font_white;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+.small {
+    color: $font_white;
+    font-family: $font_Roboto-Medium;
+    font-size: 14px;
+    line-height: 2.14;
+    text-transform: lowercase;
+}
+.we-love {
+    color: $font_white;
+    font-family: $font_Roboto-Medium;
+    font-size: 14px;
+    line-height: 2.14;
+    margin-bottom: 45px;
+}
+.heart {
+    color: $color_orange;
 }
