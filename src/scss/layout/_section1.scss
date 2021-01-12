@@ -5,9 +5,8 @@
     justify-content: left;
 
     &__smalltext {
-        font-family: $font_Roboto-Regular;
         font-size: 14px;
-        font-weight: normal;
+        font-weight: $font_Roboto-Regular;
         font-style: normal;
         line-height: 2.14;
         color: #8ccbea;
@@ -25,9 +24,8 @@
         margin: 0 15px 15px 15px;
     }
     &__text {
-        font-family: $font_Roboto-Regular;
         font-size: 18px;
-        font-weight: normal;
+        font-weight: $font_Roboto-Regular;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.67;
@@ -36,9 +34,8 @@
         margin: 0px 15px 30px 15px;
     }
     &__button1 {
-        font-family: $font_Roboto-Medium;
         font-size: 20px;
-        font-weight: 500;
+        font-weight: $font_Roboto-Medium;
         font-stretch: normal;
         font-style: normal;
         line-height: 2.25;
@@ -50,5 +47,41 @@
         width: 76px;
         height: 45px;
         margin: 0px 229px 45px 15px;
+        transition: color background-color font-size scale ease;
+        transition-duration: 1s;
+        &--go {
+            padding: 20px;
+        }
+    }
+    &__button1:hover {
+        color: $font_white;
+        background-color: $color_orange;
+        /*font-size: 24px;
+        scale: (10, 10);
+        width: 114px;*/
+    }
+}
+@media all and (min-width: 768px) {
+    .section1 {
+        margin: 0 39px 0 39px;
+        &__button1 {
+            width: 91px;
+        }
+    }
+}
+@media all and (min-width: 1200px) {
+    .section1 {
+        margin: 0 275px 0 275px;
+        &__smalltext {
+            font-size: 14px;
+            font-weight: $font_Roboto-Regular;
+            font-style: normal;
+            line-height: 2.14;
+            color: #8ccbea;
+            margin-top: 60px;
+        }
+        &__button1 {
+            width: 160px;
+        }
     }
 }

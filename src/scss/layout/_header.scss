@@ -1,11 +1,30 @@
+.nav {
+  background-color: #0271bc;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: fixed;
+
+  &__hamburguer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 15px;
+  }
+}
 .header {
   background-image: url('../images/cover.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   &__title {
@@ -14,13 +33,60 @@
     line-height: 1.31;
     text-align: center;
     color: $font_white;
+    text-transform: uppercase;
+    margin: 284px 0 10px 0;
   }
   &__text {
-    font-family: "Roboto";
+    font-weight: $font_Roboto-Regular;
     font-size: 16px;
     text-align: center;
-    color: $font_white; 
+    color: $font_white;
+  }
+  &__scrolldown {
+    width: 45px;
+    height: 45px;
+    background-color: $background_white;
+    border-radius: 100%;
+    position: relative;
+    margin-bottom: 53px;
+    margin: auto;
+    /*position: absolute;
+    top: 470px;
+    left: 138px;*/
+
+    &--check {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      padding: 10px;
+    }
   }
 }
-.nav {
+
+@media all and (min-width: 768px) {
+  .header {
+    min-height: 768px;
+    &__title {
+      font-size: 80px;
+      margin-top: 384px;
+    }
+    &__text {
+      font-size: 24px;
+    }
+    &__scrolldown {
+      margin-top: 30px;
+      margin-bottom: 45px;
+    }
+  }
+}
+@media all and (min-width: 1200px) {
+  .header__title {
+    font-size: 100px;
+  }
+  .header__scrolldown {
+    margin-bottom: 13px;
+  }
 }

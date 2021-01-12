@@ -1,21 +1,26 @@
 .section2 {
     background-color: #eff9ff;
     display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 4;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5;
+    justify-items: center;
 
     &__title {
         font-family: $font_RobotoSlab-Bold;
         font-size: 24px;
-        font-weight: bold;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.25;
         letter-spacing: normal;
         text-align: center;
         color: $font_black;
+        grid-column: 1 / 2;
+        grid-row: 1;
+        margin: 30px 15px 45px 15px;
     }
     &__reason1 {
+        grid-row: 2 / 3;
+        margin: 0 70px 45px 70px;
 
         &--titleall {
             font-family: $font_RobotoSlab-Bold;
@@ -29,9 +34,8 @@
             color: $font_black;
         }
         &--textall {
-            font-family: $font_Roboto-Regular;
             font-size: 18px;
-            font-weight: normal;
+            font-weight: $font_Roboto-Regular;
             font-stretch: normal;
             font-style: normal;
             line-height: 1.67;
@@ -40,10 +44,17 @@
             color: $font_black;
         }
     }
+    &__reason2 {
+        grid-row: 3 / 4;
+        margin: 0 70px 45px 70px;
+    }
+    &__reason3 {
+        grid-row: 4 / 5;
+        margin: 0 70px 45px 70px;
+    }
     &__button {
-        font-family: $font_Roboto-Medium;
+        font-weight: $font_Roboto-Medium;
         font-size: 20px;
-        font-weight: 500;
         font-stretch: normal;
         font-style: normal;
         line-height: 2.25;
@@ -54,6 +65,101 @@
         border-radius: 22.5px;
         width: 184px;
         height: 45px;
-        
+        /*grid-column: 1 / 2;*/
+        /* grid-row: 5 / 6; */
+        margin: 0 0 60px 0;
+        transition: color background-color scale ease;
+        transition-duration: 1s;
+    }
+    &__button:hover {
+        color: $color_orange;
+        background-color: $background_white;
+        border: solid $color_orange 2px;
+        scale: (2, 2);
+        /*font-size: 24px;
+        scale: (10, 10);
+        width: 114px;*/
+    }
+}
+@media all and (min-width: 768px) {
+    .section2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        &__title {
+            font-size: 26px;
+            grid-column: span 3;
+            grid-row: span 1;
+            /*margin: 30px 15px 45px 15px;*/
+        }
+        &__reason1 {
+            grid-column: span 1;
+            grid-row: span 2;
+            /*margin: 0 70px 45px 70px;*/
+            &--titleall {
+                font-size: 24px;
+            }
+            &--textall {
+                font-size: 20px;
+            }
+        }
+        &__reason2 {
+            grid-column: span 2;
+            grid-row: span 2;
+            /*margin: 0 70px 45px 70px;*/
+        }
+        &__reason3 {
+            grid-column: span 3;
+            grid-row: span 2;
+            /*margin: 0 70px 45px 70px;*/
+        }
+        &__button {
+            grid-column: span 3;
+            grid-row: span 3;
+            width: 210px;
+            /*margin: 0 0 60px 0;*/
+        }
+
+    }
+}
+@media all and (min-width: 1200px) {
+    .section2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        &__title {
+            font-size: 32px;
+            grid-column: span 3;
+            grid-row: span 1;
+            /*margin: 30px 15px 45px 15px;*/
+        }
+        &__reason1 {
+            grid-column: span 1;
+            grid-row: span 2;
+            /*margin: 0 70px 45px 70px;*/
+            &--titleall {
+                font-size: 24px;
+            }
+            &--textall {
+                font-size: 20px;
+            }
+        }
+        &__reason2 {
+            grid-column: span 2;
+            grid-row: span 2;
+            /*margin: 0 70px 45px 70px;*/
+        }
+        &__reason3 {
+            grid-column: span 3;
+            grid-row: span 2;
+            /*margin: 0 70px 45px 70px;*/
+        }
+        &__button {
+            grid-column: span 3;
+            grid-row: span 3;
+            width: 255px;
+            /*margin: 0 0 60px 0;*/
+        }
+
     }
 }
