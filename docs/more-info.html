@@ -11,14 +11,15 @@
 
   <body>
     <div class="page">
-      <header>
-        <div class="header">
+      <header id="hero" class="header">
+        <nav class="nav">
+          <a href="https://www.adalab.es" target="blank"><img class="nav__hamburguer" src="./assets/images/ico-menu.svg" alt=""></a>
+        </nav>
           <h1 class="header__title">Anonymous <br> Proxy</h1>
           <p class="header__text">In hac habitasse platea dictumst.</p>
+        <div class="header__scrolldown">
+          <a href="#reason"><img class="header__scrolldown--check" src="./assets/images/ico-scroll-down.svg" alt=""></a>
         </div>
-        <nav class="nav">
-          <a><img src="./assets/images/ico-menu.svg" alt=""></a>
-        </nav>
       </header>
 
       <main>
@@ -29,20 +30,27 @@
         </p>
       </main>
       <footer class="footer">
-          <ul class="wrapper-footer wrapper-footer__1">
-            <li class="link"><a href="https://www.adalab.es" target="blank">Articles</a></li>
-            <li class="link"><a href="https://www.adalab.es" target="blank">Books</a></li>
-            <li class="link"><a href="https://www.adalab.es" target="blank">Events</a></li>
-            <li class="link"><a href="https://www.adalab.es" target="blank">Reasons</a></li>
-            <li class="link"><a href="https://www.adalab.es" target="blank">Tips</a></li>
+        <div class="footer__arrow">
+          <a href="#hero"><img class="footer__arrow--up" src="./assets/images/ico-arrow.svg" alt=""></a>
+        </div>
+        <div class="footer-container">
+          <ul class="footer-container__wrapper footer-container__wrapper--1">
+            <li class="footer-container__wrapper--link"><a href="https://www.adalab.es" target="blank">Articles</a></li>
+            <li class="footer-container__wrapper--link"><a href="https://www.adalab.es" target="blank">Books</a></li>
+            <li class="footer-container__wrapper--link"><a href="https://www.adalab.es" target="blank">Events</a></li>
+            <li class="footer-container__wrapper--link"><a href="https://www.adalab.es" target="blank">Reasons</a></li>
+            <li class="footer-container__wrapper--link"><a href="https://www.adalab.es" target="blank">Tips</a></li>
           </ul>
-          <ul class="wrapper-footer wrapper-footer__2">
-            <li class="link"><a href="https://www.adalab.es" target="blank">Twitter</a></li>
-            <li class="link"><a href="https://www.adalab.es" target="blank">Instagram</a></li>
-            <li class="link"><a href="https://www.adalab.es" target="blank">Mastodon.Social</a></li>
+          <ul class="footer-container__wrapper footer__wrapper--2">
+            <li class="footer-container__wrapper--link"><a href="https://www.adalab.es" target="blank">Twitter</a></li>
+            <li class="footer-container__wrapper--link"><a href="https://www.adalab.es" target="blank">Instagram</a></li>
+            <li class="footer-container__wrapper--link"><a href="https://www.adalab.es" target="blank">Mastodon.Social</a></li>
           </ul>
-        <small class="small">&copy 2017</small>
-        <div class="we-love">We <span class="heart">&#x2764</span> components</div>
+          <div class="footer-container__copylove">
+            <small class="footer-container__copylove--small">&copy2017</small>
+            <div class="footer-container__copylove--we-love">We<span class="footer-container__copylove--we-love--heart">&#x2764</span>components</div>
+          </div>
+      </div>
       </footer>
     </div>
     <script src="./assets/js/main.js"></script>
