@@ -1,9 +1,5 @@
 .footer {
     background-color: #304268;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     &__arrow {
         background-color: $background_white;
         width: 45px;
@@ -12,6 +8,9 @@
         position: relative;
         margin: auto;
         bottom: 25px;
+        animation-name: natol;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
         &--up{
             position: absolute;
             top: 0;
@@ -21,13 +20,31 @@
             margin: auto;
             padding: 10px;
         }
+        @keyframes natol{
+            from {
+                transform: rotate(0);
+            }
+            30% {
+                transform: rotate(90deg);
+            }
+            60% {
+                transform: rotate(180deg);
+            }
+            75% {
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
     }
-    &__wrapper--1 {
-        margin: 60px 124px 0 124px;
-    }
-    &__wrapper--2 {
-        margin: 30px 86px 30px 86px;
-    }
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     &__wrapper--link {
         color: $font_white;
         font-weight: $font_Roboto-Regular;
@@ -51,70 +68,36 @@
         font-size: 14px;
         line-height: 2.14;
         text-transform: lowercase;
+        margin-bottom: 45px;
         &--heart {
             color: $color_orange;
         }
     }   
 }
 @media all and (min-width: 768px) {
-    .footer {
+    .footer-container {
         display: flex;
         flex-direction: row;
         text-align: left;
         align-items: flex-start;
         height: 240px;
+        margin: 0 39px 0 39px;
         &__wrapper--1 {
             width: 210px;
-            /*margin-bottom: 45px;*/
-            order: 2;
-            margin: 45px 30px 45px 30px;
         }
         &__wrapper--2 {
             width: 210px;
-            order: 3;
-            margin: 45px 39px 105px 0;
         }
         &__copylove {
             width: 210px;
-            margin: 45px 0 165px 39px;
+            order: -1;
             display: flex;
             flex-direction: column;
-        }
-        &__arrow {
-            position: relative;
-            margin: auto;
-            bottom: 120px;
-            left: 370px;
-            /*&--up{
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-                padding: 10px;
-            }*/
         }
     }
 }
 @media all and (min-width: 1200px) {
-    .footer {
-        padding-left: 370px;
-        padding-right: 370px;
-        &__arrow {
-            position: relative;
-            margin: auto;
-            bottom: 120px;
-            left: 290px;
-            /*&--up{
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-                padding: 10px;
-            }*/
-        }
+    .footer-container {
+        margin: 0 370px 0 370px;
     }
 }
