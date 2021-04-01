@@ -1,4 +1,4 @@
-# PÁGINA WEB RESPONSIVE
+# Anonymous Proxy | Web Responsive
 
 Este proyecto corresponde a la primera evaluación del bootcamp cursado en Adalab. Durante este ejercicio he puesto en práctica los conocimientos adquiridos sobre `HTML5`y `CSS3`. Como soporte del ejercicio, se ha usado la plantilla de proyectos `STARTER KIT` creada por [Adalab](https://adalab.es/).
 
