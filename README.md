@@ -1,6 +1,6 @@
 # Anonymous Proxy | Web Responsive
 
-Este proyecto corresponde a la evaluación final del `módulo 1` del bootcamp cursado en [Adalab](https://adalab.es/). Durante este ejercicio he puesto en práctica los conocimientos adquiridos sobre [![HTML Badge](https://img.shields.io/badge/-html-fc0505?style=for-the-badge&labelColor=black&logo=html5&logoColor=fc0505)](#) y [![CSS Badge](https://img.shields.io/badge/-css-0574fc?style=for-the-badge&labelColor=black&logo=css3&logoColor=0574fc). Como soporte del ejercicio, se ha usado la plantilla de proyectos [STARTER KIT](https://github.com/Adalab/adalab-web-starter-kit)](#) creada por Adalab.
+Este proyecto corresponde a la evaluación final del `módulo 1` del bootcamp cursado en [Adalab](https://adalab.es/). Durante este ejercicio he puesto en práctica los conocimientos adquiridos sobre `HTML5` y `CSS3`. Como soporte del ejercicio, se ha usado la plantilla de proyectos [STARTER KIT](https://github.com/Adalab/adalab-web-starter-kit) creada por Adalab.
 
 El ejercicio consiste en desarrollar una página web `responsive`, cuyo diseño se ha proporcionado a través de [Zeplin](https://app.zeplin.io/project/5c8ff9170ffc6f2525b2790c), utilizando diversas herramientas como:
 
