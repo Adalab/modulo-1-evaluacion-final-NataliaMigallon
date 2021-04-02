@@ -20,4 +20,3 @@ Si quieres instalar y ejecutar el proyecto completo, sigue los siguientes pasos:
 2. Entra en la carpeta raíz
 3. Ejecuta en la terminal `npm install`
 4. Para lanzar el proyecto: ejecuta en la terminal `npm start`.
-github emo
